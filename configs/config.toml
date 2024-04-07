@@ -1,0 +1,41 @@
+[App]
+    PrefixUrl = "http://127.0.0.1:8080"
+    SERVER_ADDRESS = "127.0.0.1:8080"
+    AppName = "gin-example"
+
+    LogSavePath = "logs/"
+    LogSaveName = "log"
+    LogFileExt = "log"
+    MaxLogFiles = 5
+
+    ImageStaticPath = "/static/"
+    ImageSavePath = "upload/images/"
+
+[Server]
+    RunMode = "debug" #debug or release
+    HttpPort = 8080
+    ReadTimeout = 60
+    WriteTimeout = 60
+
+[Mysql]
+    Host = "127.0.0.1"
+    Port = "3306"
+    Dbname = "mupay"
+    User = "root"
+    Password = "12345678"
+
+[Jwt]
+    Secret = "gin_example"
+    ExpirationDays = 30 # 天
+
+[redis]
+  Addr = "127.0.0.1:6379"
+  DB = "0"
+  Password = ""
+
+# [mail]
+#   host = "smtp.163.com"
+#   pass = ""
+#   port = 465
+#   to = ""
+#   user = ""
